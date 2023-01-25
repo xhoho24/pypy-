@@ -25,7 +25,7 @@ async def msg_handler(client, message: Message):
     word = message.text
 
     if word == "/start":
-        await message.reply_text("Hello, I'm a bot that searches for people in Safone, support \nhttps://t.me/+AeGtX3FeftE3ZTEx ")
+        await message.reply_text("Hello, I'm a bot that searches for people in Safone, support \nhttps://t.me/+M489PcQCzUI0NWM5 ")
     elif word == "/help":
         await message.reply_text("/start - Starts the bot.\n/help - Shows this message.")
     elif message.text:
