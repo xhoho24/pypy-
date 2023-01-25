@@ -2,6 +2,13 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from SafoneAPI import SafoneAPI
 import random, json, requests
+import logging
+import time
+
+logging.basicConfig(filename="/var/www/html/log.txt",format='[%(levelname) 5s/%(asctime)s] %(name)s: %(msg)s',level=logging.ERROR)
+logging.error("Waiting 30 minutes...")
+time.sleep(1800)
+logging.error("Running app now")
 
 api = SafoneAPI()
 
